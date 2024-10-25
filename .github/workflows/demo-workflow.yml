@@ -1,0 +1,10 @@
+name: My Demo workflow
+
+on: workflow_dispatch
+
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "hello world"
